@@ -1,17 +1,23 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  background-color: #FFFFFF;
 }
 
 header {
   padding: 20px 0;
 }
 
+.header {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
 header .row,
 footer .row {
   display: flex;
   align-items: center;
-}
+} 
 
 header h1 {
   font-weight: 700;
@@ -23,7 +29,7 @@ header nav {
   justify-content: flex-end;
 }
 
-header p {
+header a {
   padding: 0 20px;
   margin: 0;
 }
@@ -31,10 +37,10 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('http://jirehmissions.org/wp-contentpop/uploads/2014/08/chat.png');
-  background-size: contain;
-  color: #FF00FF;
-  height: 500px;
+  background-image: url('http://s33.postimg.org/t7ls5wozj/Jumbotron5.png');
+  background-size: 100%;
+  background-color: #eeeeee;
+  height: 300px;
   text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
@@ -48,11 +54,6 @@ header p {
 .jumbotron h3 {
   margin: 0 0 20px;
   color: #fff;
-}
-
-section .row img {
-  margin: 0 0 30px;
-  width: 100%;
 }
 
 .col-md-6 {
@@ -88,11 +89,96 @@ footer .col-sm-8 {
   justify-content: flex-end;
 }
 
-footer ul {
+header ul,
+footer ul,
+section ul {
   list-style: none;
 }
 
 footer li img {
   width: 32px;
   height: 32px;
+}
+
+.verticalLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#offering,
+.footer {
+  padding: 0 0 20px 0;
+}
+
+.jumbotron {
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: thin;
+}
+
+.fa {
+  display: flex;
+  align-items: center;
+}
+
+.nav a:link {
+  text-decoration: none;
+}
+
+.nav a:visited {
+  border-bottom-style: solid;
+}
+
+.nav :hover {
+  text-decoration: none;
+}
+
+.active {
+  border-bottom-style: solid;
+}
+
+.nav {
+  border-bottom: 2px solid transparent;
+}
+
+.hover {
+  border-bottom: 2px solid;
+}
+
+.fa {
+  color: orangered;
+}
+
+.fa-hover {
+  color: darkred;
+}
+
+.vertical-hover {
+  display: block;
+}
+
+.links a:visited {
+  color: orangered !important;
+}
+
+.links a:hover, .links a:active {
+  color: darkred !important;
+}
+
+.links a {
+  color: palevioletred !important;
+}
+
+#custom-links a:visited {
+  color: orangered !important;
+}
+
+#custom-links a:hover, #custom-links a:active {
+  color: darkred !important;
+}
+
+#custom-links a {
+  color: palevioletred !important;
 }
